@@ -1,17 +1,17 @@
 <template>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Loader',
   mounted() {
-    setTimeout(function() {
+    setTimeout(function () {
       document.getElementById("loading").classList.add("animated");
       document.getElementById("loading").classList.add("fadeOut");
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementById("loading").classList.remove("animated");
         document.getElementById("loading").classList.remove("fadeOut");
         document.getElementById("loading").style.display = "none";

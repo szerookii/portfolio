@@ -27,12 +27,12 @@ export default {
     "~/static/css/main.css",
     "~/static/css/animate.min.css",
     '@fortawesome/fontawesome-svg-core/styles.css'
-    ],
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/magicgrid.js'},
-    {src: '~/plugins/fontawesome.js'}
+    { src: '~/plugins/magicgrid.js' },
+    { src: '~/plugins/fontawesome.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -1,13 +1,13 @@
 <template>
-<div id="work">
-  <h1>What I worked on ?</h1>
+  <div id="work">
+    <h1>What I worked on ?</h1>
 
-  <div class="projects" id="work_section">
-    <magic-grid :maxCols.number="2" :maxColWidth.num="480" :gap.number="38">
-      <ProjectCard v-for="project in repos" :projectData="project" :key="project.id"></ProjectCard>
-    </magic-grid>
+    <div class="projects" id="work_section">
+      <magic-grid :maxCols.number="2" :maxColWidth.num="480" :gap.number="38">
+        <ProjectCard v-for="project in repos" :projectData="project" :key="project.id"></ProjectCard>
+      </magic-grid>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
