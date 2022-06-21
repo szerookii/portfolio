@@ -2,7 +2,7 @@
     <div id="profile_img" v-bind:style="{ 'background-image': 'url(' + this.url + ')' }"></div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
     name: 'ProfileImg',
     props: ['url']
