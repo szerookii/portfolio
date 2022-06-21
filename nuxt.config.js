@@ -12,9 +12,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og:title', name: 'og:title', content: 'szeroki' },
       { hid: 'description', name: 'description', content: 'szeroki, backend developer and reverse engineer.' },
       { hid: 'og:description', name: 'description', content: 'szeroki, backend developer and reverse engineer.' },
-      { hid: 'og:image', name: 'og:image', content: 'https://cdn.discordapp.com/attachments/365226311674888193/661738706897731594/f1e33ea2f317cd6a3178646431099534-min.png' },
+      { hid: 'og:image', name: 'og:image', content: 'https://avatars.githubusercontent.com/u/36236750?v=4' },
+      { hid: 'theme-color', name: 'theme-color', content: '#E7A854' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
