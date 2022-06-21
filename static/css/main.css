@@ -79,53 +79,6 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-.emoji {
-  width: 18px;
-  height: 18px;
-}
-
-#profile_img_blog {
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-}
-
-#username_blog {
-  font-size: 18px;
-  color: var(--text-color);
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-#username_blog span {
-  font-size: 24px;
-  font-family: "Questrial", sans-serif !important;
-}
-
-#username_blog b {
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-#blog-display {
-  width: 60vw;
-  margin: 0px 20vw;
-  text-align: left;
-  margin-top: 3vh;
-  z-index: 1;
-}
-
-#profile_blog {
-  width: 60vw;
-  margin: 0px 20vw;
-  margin-top: 34vh;
-  text-align: left;
-  z-index: 1;
-}
-
 #background_overlay {
   width: 100vw;
   height: 55vh;
@@ -144,69 +97,6 @@ body {
   z-index: -2;
   top: 0;
   left: 0;
-}
-
-#blog-display h1 {
-  font-size: 50px;
-  color: var(--text-color);
-  font-weight: bold;
-  font-family: "Questrial", sans-serif;
-}
-
-#blog-display h2 {
-  color: var(--blog-gray-color);
-}
-
-#blog-display {
-  padding: 1vh 0px;
-  font-family: "Questrial", sans-serif;
-}
-
-#blog p {
-  font-size: 17px;
-  line-height: 25px;
-  word-spacing: 1.2px;
-  margin: 5vh 0px;
-}
-
-#blog p span {
-  padding: 2px 4px;
-  background: var(--text-color);
-  color: var(--bg-color) !important;
-}
-
-#blog img {
-  width: 100%;
-  margin: 2vh 0px;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 0, 0, 0.08);
-}
-
-#header {
-  width: 63vw;
-  text-align: right;
-  padding: 3vh 0px;
-  position: absolute;
-}
-
-#header a {
-  color: var(--text-color);
-  text-decoration: none;
-  margin-left: 4vw;
-  font-weight: bold;
-}
-
-#footer_blog {
-  width: 90vw;
-  padding: 8vh 5vw;
-  text-align: center;
-}
-
-#footer_blog a {
-  color: var(--text-color) !important;
-  text-decoration: none;
-  font-family: "Questrial", sans-serif;
-  font-weight: bold;
 }
 
 #footer {
@@ -229,7 +119,7 @@ body {
   min-height: 180px;
   max-width: 180px;
   max-height: 180px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -240,12 +130,8 @@ body {
 }
 
 #username {
-  font-size: 18px;
+  font-size: 34px;
   font-weight: bold;
-}
-
-#username span {
-  font-size: 24px;
 }
 
 #userbio {
@@ -370,53 +256,6 @@ body {
   font-weight: normal !important;
 }
 
-#blog_section {
-  margin: 2vh 0px;
-  padding: 2vh 0px !important;
-}
-
-#blogs {
-  columns: 2;
-}
-
-#blog_title {
-  font-size: 50px;
-}
-
-#blog_sub_title {
-  font-size: 36px;
-  margin-top: -2vh;
-}
-
-#blogs section {
-  width: 100%;
-  display: inline-block;
-  border-radius: 5px;
-  color: var(--text-color);
-  border: 1px solid rgb(0, 0, 0, 0.04);
-  box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
-  transition: 0.4s ease-in-out;
-  transform: scale(1);
-  padding: 0px;
-  margin: 2vh 0px;
-}
-
-#blogs section img {
-  width: 100%;
-  border-radius: 5px 5px 0px 0px;
-}
-
-.blog_container {
-  padding: 2.5vh 5%;
-}
-
-#blogs section:hover {
-  cursor: pointer;
-  border: 1px solid rgb(0, 0, 0, 0);
-  box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
-  transform: scale(1.03);
-}
-
 .go_back {
   position: absolute;
   color: var(--text-color);
@@ -474,62 +313,12 @@ body {
     width: 88%;
   }
 
-  #blogs {
-    columns: 1;
-  }
-
-  #blogs section {
-    width: 98%;
-  }
-
-  #blog_section {
-    margin: 0px;
-  }
-
-  #blog-display {
-    width: 90vw;
-    margin: 0px 5vw;
-    text-align: left;
-    margin-top: 0vh;
-    z-index: 1;
-  }
-
-  #blog_title {
-    font-size: 32px !important;
-  }
-
-  #blog_sub_title {
-    font-size: 24px;
-    margin-top: -1vh;
-  }
-
-  #profile_blog {
-    width: 90vw;
-    margin: 0px 5vw;
-    margin-top: 36vh;
-    text-align: left;
-    z-index: 1;
-  }
-
-  #profile_img_blog {
-    width: 65px;
-    height: 65px;
-  }
-
   .go_back {
     position: relative;
     color: var(--text-color);
     font-size: 26px;
     margin-left: 5vw;
     top: 5vh;
-  }
-
-  #blog img {
-    margin: 1vh 0px !important;
-  }
-
-  #blog p {
-    margin: 2vh 0px;
   }
 }
 
@@ -551,17 +340,7 @@ body {
   -webkit-text-fill-color: #fff;
 }
 
-#blog-display h1 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: #fff;
-}
-
 .projects section {
-  background: rgb(20, 20, 20);
-}
-
-#blog_section section {
   background: rgb(20, 20, 20);
 }
 
