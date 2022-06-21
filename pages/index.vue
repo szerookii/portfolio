@@ -5,14 +5,15 @@
 
     <div id="display">
         <ProjectGrid username="Seyz123"></ProjectGrid>
+        <Footer></Footer>
     </div>
 </div>
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
-    name: "IndexPage"
+    name: "IndexPage",
 })
 </script>

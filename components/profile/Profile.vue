@@ -15,8 +15,6 @@
 </template>
 
 <script>
-import ProfileInfo from './profile/ProfileInfo.vue';
-
 export default {
     name: "Profile",
     props: ["username"],
