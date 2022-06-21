@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <p>Made with ❤️ by szeroki, based on <a href="https://github.com/imfunniee">imfunniee</a>'s gitfolio</p>
+        <p>Made with ❤️ by szeroki</p>
     </div>
 </template>
 
