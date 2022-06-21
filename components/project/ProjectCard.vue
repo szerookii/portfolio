@@ -19,9 +19,6 @@
 <script>
 export default {
     name: "ProjectCard",
-    props: ['projectData'],
-    mounted() {
-        console.log(this.projectData);
-    },
+    props: ['projectData']
 }
 </script>
