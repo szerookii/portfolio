@@ -4,7 +4,7 @@
     <Profile username="Seyz123"></Profile>
 
     <div id="display">
-        <ProjectGrid></ProjectGrid>
+        <ProjectGrid username="Seyz123"></ProjectGrid>
     </div>
 </div>
 </template>

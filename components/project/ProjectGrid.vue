@@ -3,8 +3,8 @@
   <h1>What I worked on ?</h1>
 
   <div class="projects" id="work_section">
-    <magic-grid>
-      <ProjectCard v-for="project in data" :project="project" :key="project.id"></ProjectCard>
+    <magic-grid :maxCols.number="2" :maxColWidth.num="380" :gap.number="38" :wrapper="work_section">
+      <ProjectCard v-for="project in repos" :projectData="project" :key="project.id"></ProjectCard>
     </magic-grid>
   </div>
 </div>
@@ -16,7 +16,7 @@ export default {
   props: ['username'],
   data() {
     return {
-      data: {}
+      repos: []
     }
   },
   mounted() {
@@ -24,8 +24,8 @@ export default {
   },
   methods: {
     async getData() {
-      const data = this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
-      this.data = data;
+      const repos = await this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
+      this.repos = repos;
     }
   }
 }
