@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.8",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
