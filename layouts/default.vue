@@ -27,3 +27,71 @@ export default {
 <template>
   <Nuxt />
 </template>
+
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+/* Variables */
+
+:root {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: #fff;
+  --blog-gray-color: rgb(180, 180, 180);
+  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.3), rgb(10, 10, 10, 1)), url("https://cdn.discordapp.com/attachments/365226311674888193/661738706897731594/f1e33ea2f317cd6a3178646431099534-min.png");
+  --background-background: linear-gradient 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6) url("https://cdn.discordapp.com/attachments/365226311674888193/661738706897731594/f1e33ea2f317cd6a3178646431099534-min.png") center center fixed;
+  --height: 50vh;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --background-image: linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0)), url("https://cdn.discordapp.com/attachments/365226311674888193/661738706897731594/f1e33ea2f317cd6a3178646431099534-min.png") !important;
+  }
+}
+
+/* Resets / default values */
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+
+/* Selection */
+
+::selection {
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+</style>
