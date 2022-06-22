@@ -3,7 +3,13 @@
     name: "Loader",
 
     mounted() {
-      setTimeout(() => document.getElementById("loading").classList.add("animated", "fadeOut"), 1500);
+      const loading = document.getElementById("loading");
+
+      setTimeout(() => {
+        loading.classList.add("animated", "fadeOut");
+
+        setTimeout(() => loading.style.display = "none", 800);
+      }, 1500);
     }
   }
 </script>
