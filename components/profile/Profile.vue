@@ -7,14 +7,9 @@
         data: {}
       };
     },
-    mounted() {
-      this.getData();
-    },
-    methods: {
-      async getData() {
-        const data = await this.$axios.$get(`https://api.github.com/users/${this.username}`);
+    async fetch() {
+      const data = await this.$axios.$get(`https://api.github.com/users/${this.username}`);
         this.data = data;
-      }
     }
   }
 </script>

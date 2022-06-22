@@ -7,17 +7,12 @@
         repos: []
       }
     },
-    mounted() {
-      this.getData()
-    },
-    methods: {
-      async getData() {
-        const repos = await this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
+    async fetch() {
+      const repos = await this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
 
         const sortedRepos = repos.sort((a, b) => Number(Date.parse(b.updated_at)) - Number(Date.parse(a.updated_at)));
 
         this.repos = sortedRepos;
-      }
     }
   }
 </script>
