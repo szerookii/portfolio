@@ -1,17 +1,17 @@
 <script>
-  export default {
-    name: "Loader",
+export default {
+  name: "Loader",
 
-    mounted() {
-      const loading = document.getElementById("loading");
+  mounted() {
+    const loading = document.getElementById("loading");
 
-      setTimeout(() => {
-        loading.classList.add("animated", "fadeOut");
+    setTimeout(() => {
+      loading.classList.add("animated", "fadeOut");
 
-        setTimeout(() => loading.style.display = "none", 800);
-      }, 1500);
-    }
+      setTimeout(() => loading.style.display = "none", 400);
+    }, 1000);
   }
+}
 </script>
 
 <template>
@@ -19,39 +19,72 @@
 </template>
 
 <style lang="scss">
-  #loading {
-    height: 100vh;
-    width: 100vw;
+#loading {
+  height: 100vh;
+  width: 100vw;
 
-    position: fixed;
-    top: 0; left: 0;
-    
-    background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    z-index: 10;
+  background: var(--bg-color);
 
-    display: grid;
-    place-content: center;
+  z-index: 10;
+
+  display: grid;
+  place-content: center;
+}
+
+#spinner {
+  height: 50px;
+  width: 50px;
+
+  animation: rotate 0.5s infinite linear;
+
+  border: 2px solid var(--bg-color);
+  border-bottom: 2px solid var(--text-color);
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  #spinner {
-    height: 50px;
-    width: 50px;
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-    animation: rotate 0.5s infinite linear;
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
-    border: 2px solid var(--bg-color);
-    border-bottom: 2px solid var(--text-color);
-    border-radius: 50%;
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    opacity: 0;
   }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
 </style>
