@@ -26,14 +26,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/static/css/main.css",
+    "~/static/css/main.scss",
     "~/static/css/animate.min.css",
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/magicgrid.js' },
     { src: '~/plugins/fontawesome.js' }
   ],
 
@@ -60,6 +59,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['vue-fontawesome'],
+    transpile: ['vue-fontawesome']
   }
 }
