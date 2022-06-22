@@ -1,6 +1,11 @@
 <script>
 export default {
-  props: ["error"]
+  props: ["error"],
+  head() {
+    return {
+      title: `${this.error.statusCode}: ${this.error.message}`
+    }
+  }
 }
 </script>
 
@@ -10,9 +15,7 @@ export default {
     <div class="error-container">
       <h1 v-if="error.statusCode === 404">Page not found</h1>
       <h1 v-else>An error occurred</h1>
-      <NuxtLink class="link" to="/">
-        <p>Back to home</p>
-      </NuxtLink>
+      <NuxtLink class="link" to="/">Back to home</NuxtLink>
     </div>
   </div>
 </template>
