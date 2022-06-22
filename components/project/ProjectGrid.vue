@@ -1,32 +1,46 @@
+<script>
+  export default {
+    name: "ProjectGrid",
+    props: ["username"],
+    data() {
+      return {
+        repos: []
+      }
+    },
+    mounted() {
+      this.getData()
+    },
+    methods: {
+      async getData() {
+        const repos = await this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
+        this.repos = repos;
+      }
+    }
+  }
+</script>
+
 <template>
-  <div id="work">
+  <div class="project-container">
     <h1>What I worked on ?</h1>
 
-    <div class="projects" id="work_section">
-      <magic-grid :maxCols.number="2" :maxColWidth.num="480" :gap.number="38">
-        <ProjectCard v-for="project in repos" :projectData="project" :key="project.id"></ProjectCard>
-      </magic-grid>
+    <div class="projects">
+      <ProjectCard v-for="project in repos" :projectData="project" :key="project.id"/>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProjectGrid',
-  props: ['username'],
-  data() {
-    return {
-      repos: []
-    }
-  },
-  mounted() {
-    this.getData()
-  },
-  methods: {
-    async getData() {
-      const repos = await this.$axios.$get(`https://api.github.com/users/${this.username}/repos`);
-      this.repos = repos;
+<style lang="scss">
+  .project-container {
+    width: 90%;
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-gap: 30px;
+
+      @media (max-width: 850px){
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+      }
     }
   }
-}
-</script>
+</style>

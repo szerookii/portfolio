@@ -1,13 +1,28 @@
+<script>
+  export default {
+    name: "ProfileInfo",
+    props: ["ghData", "links"] // TODO: links is not used
+  }
+</script>
+
 <template>
-    <div>
-        <div id="username">{{ this.ghData.name }}</div>
-        <div id="userbio" style="display: block;">{{ this.ghData.bio }}</div>
-    </div>
+  <div>
+    <p id="username">{{ this.ghData.name }}</p>
+    <p id="userbio" style="display: block;">{{ this.ghData.bio }}</p>
+  </div>
 </template>
 
-<script>
-export default {
-    name: 'ProfileInfo',
-    props: ['ghData', "links"] // TODO: links is not used
-}
-</script>
+<style lang="scss">
+  p {
+    margin: 0;
+  }
+
+  #username {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #userbio {
+    font-size: 1.2rem;
+  }
+</style>

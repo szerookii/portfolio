@@ -1,11 +1,16 @@
+<script>
+  export default {
+    name: "Footer"
+  }
+</script>
+
 <template>
-    <div id="footer">
-        <p>Made with ❤️ by szeroki</p>
-    </div>
+  <p class="footer">Made with ❤️ by szeroki</p>
 </template>
 
-<script>
-export default {
-    name: 'Footer'
-}
-</script>
+<style lang="scss">
+  .footer {
+    text-align: center;
+    margin: 2rem 0;
+  }
+</style>
