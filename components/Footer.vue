@@ -11,6 +11,7 @@
 <style lang="scss">
   .footer {
     text-align: center;
+    
     margin: 2rem 0;
   }
 </style>

@@ -33,14 +33,20 @@
       height: 100vh;
       width: 100%;
 
+      @media (max-width: 800px){
+        height: max-content;
+      }
+
       display: flex;
       align-items: center;
       flex-direction: column;
 
-      overflow-y: scroll;
+      @media (min-width: 800px){
+        overflow-y: scroll;
 
-      &::-webkit-scrollbar {
-        width: 0px;
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
       }
     }
   }
