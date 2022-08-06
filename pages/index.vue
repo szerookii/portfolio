@@ -12,10 +12,10 @@
     <Loader/>
 
     <!-- Page content -->
-    <Profile username="Seyz123"/>
+    <Profile username="szerookii"/>
 
     <div class="content">
-      <ProjectGrid username="Seyz123"></ProjectGrid>
+      <ProjectGrid username="szerookii"></ProjectGrid>
       <Footer/>
     </div>
   </div>
