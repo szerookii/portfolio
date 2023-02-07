@@ -7,7 +7,7 @@
     export let icon: IconDefinition;
 </script>
 
-<a href="{href}" class="gap-2 text-xs inline-flex font-bold px-3 text-white border-white border-2 py-1 rounded-full">
+<a href="{href}" class="gap-2 text-xs inline-flex font-bold px-3 border-white border-2 py-1 rounded-full">
     <FontAwesomeIcon size="xl" icon={icon} />
     {text}
 </a>
