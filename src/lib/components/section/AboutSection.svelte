@@ -1,6 +1,4 @@
 <script lang="ts">
-    import Header from "$lib/images/header.png";
-    import szeroki from "$lib/images/szeroki.png";
     import {Variables} from "$lib/utils/Variables";
     import {faDiscord, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
     import SocialLink from "$lib/components/SocialLink.svelte";
@@ -12,14 +10,14 @@
     <img
             alt="header"
             class="max-h-56 w-full object-cover block object-center"
-            src={Header}
+            src="header.png"
     >
 
     <div class="w-full shrink-0 flex items-center justify-start max-lg:pl-8 lg:pl-44 xl:pl-96">
         <img
                 alt="profile"
                 class="-mt-16 h-32 w-32 rounded-full"
-                src={szeroki}
+                src="szeroki.png"
         >
     </div>
 
