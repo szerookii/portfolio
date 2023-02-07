@@ -33,7 +33,7 @@
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center gap-8">
             <SocialLink name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
 
             <SocialLink name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
