@@ -13,7 +13,7 @@
             src="/header.png"
     >
 
-    <div class="w-full shrink-0 flex items-center justify-start max-lg:pl-8 lg:pl-44 xl:pl-96">
+    <div class="w-full shrink-0 flex items-center justify-start mx-auto w-5/6 lg:w-2/4">
         <img
                 alt="profile"
                 class="-mt-16 h-32 w-32 rounded-full"
@@ -21,7 +21,7 @@
         >
     </div>
 
-    <div class="pr-8 shrink-0 text-white grid items-center justify-start max-lg:pl-8 lg:px-44 xl:px-96">
+    <div class="pr-8 shrink-0 text-white grid items-center justify-start mx-auto w-5/6 lg:w-2/4">
         <p class="text-white text-4xl pt-8 font-bold">
             Développeur & Beatmaker
             <Tag icon={faLocationDot} text="Lille"/>
@@ -31,7 +31,7 @@
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex flex-wrap justify-start gap-8">
             <SocialLink icon={faGithub} link="https://github.com/{Variables.GITHUB_USERNAME}" name="GitHub"/>
 
             <SocialLink icon={faTwitter} link="https://twitter.com/{Variables.TWITTER_USERNAME}" name="Twitter"/>

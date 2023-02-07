@@ -9,7 +9,7 @@
 <div class="py-4">
     <div class="flex flex-wrap justify-between">
         <div class="flex flex-wrap items-center gap-2">
-            <p class="uppercase text-white text-xl">{experience.company}</p>
+            <p class="uppercase font-bold text-white text-xl">{experience.company}</p>
             <Tag bind:href={experience.link} icon={faArrowUpRightFromSquare} text={experience.type}/>
         </div>
 
