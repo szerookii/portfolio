@@ -8,7 +8,7 @@ export type Experience = {
     company: string;
     date: {
         start: Dayjs;
-        end: Dayjs | null;
+        end: Dayjs;
     },
     dateFormat: {
         start: string;
