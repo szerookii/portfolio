@@ -2,8 +2,9 @@
     import Header from "$lib/images/header.png";
     import szeroki from "$lib/images/szeroki.png";
     import {Variables} from "$lib/utils/Variables";
-    import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
+    import {faDiscord, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
     import Link from "$lib/components/Link.svelte";
+    import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 </script>
 
 <section class="h-full w-full">
@@ -28,10 +29,14 @@
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <div class="grid grid-cols-4 max-sm:grid-cols-2 gap-4 md:pt-4">
+        <div class="grid grid-cols-4 justify-center max-sm:grid-cols-2 gap-8 md:pt-4">
             <Link name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
 
             <Link name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
+
+            <Link name="Discord" link="https://discord.com/users/{Variables.DISCORD_ID}" icon={faDiscord} />
+
+            <Link name="Email" link="mailto:{Variables.EMAIL}" icon={faEnvelope} />
         </div>
     </div>
 </section>
