@@ -8,7 +8,7 @@
     import Tag from "$lib/components/Tag.svelte";
 </script>
 
-<section class="py-8">
+<section class="pb-8">
     <img
             alt="header"
             class="max-h-56 w-full object-cover block object-center"
