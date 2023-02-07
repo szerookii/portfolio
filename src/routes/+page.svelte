@@ -8,6 +8,6 @@
     <!-- Add meta tags for social media here -->
 </svelte:head>
 
-<section class="min-h-screen scroll-smooth bg-black">
+<section class="min-h-screen scroll-smooth">
     <Header/>
 </section>
