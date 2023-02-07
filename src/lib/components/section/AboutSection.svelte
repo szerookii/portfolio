@@ -3,7 +3,7 @@
     import szeroki from "$lib/images/szeroki.png";
     import {Variables} from "$lib/utils/Variables";
     import {faDiscord, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
-    import Link from "$lib/components/Link.svelte";
+    import SocialLink from "$lib/components/SocialLink.svelte";
     import {faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
     import Tag from "$lib/components/Tag.svelte";
 </script>
@@ -33,14 +33,14 @@
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <div class="flex flex-wrap justify-center max-sm:grid-cols-2 gap-8 md:pt-4">
-            <Link name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
+        <div class="flex flex-wrap justify-center gap-8">
+            <SocialLink name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
 
-            <Link name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
+            <SocialLink name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
 
-            <Link name="Discord" link="https://discord.com/users/{Variables.DISCORD_ID}" icon={faDiscord} />
+            <SocialLink name="Discord" link="https://discord.com/users/{Variables.DISCORD_ID}" icon={faDiscord} />
 
-            <Link name="Email" link="mailto:{Variables.EMAIL}" icon={faEnvelope} />
+            <SocialLink name="Email" link="mailto:{Variables.EMAIL}" icon={faEnvelope} />
         </div>
     </div>
 </section>
