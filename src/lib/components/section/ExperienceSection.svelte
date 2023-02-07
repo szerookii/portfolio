@@ -4,7 +4,7 @@
     import {populateExperience} from "$lib/configs/experience/experience.utils.js";
 </script>
 
-<div class="max-lg:pl-8 px-8 lg:px-44 xl:px-96">
+<div class="mx-auto w-5/6 lg:w-2/4">
     {#each populateExperience(experiences) as experience}
         <ExperienceCard experience="{experience}"/>
     {/each}
