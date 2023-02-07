@@ -9,6 +9,7 @@
     <title>szeroki</title>
     <meta name="title" content="szeroki">
     <meta name="description" content="Développeur C++ & Golang et rétro-ingénieur.">
+    <meta name="theme-color" content="#000000" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
