@@ -2,7 +2,7 @@
     import '$lib/app.css';
 
     import Loader from "$lib/components/Loader.svelte";
-    import Szeroki from "$lib/images/szeroki.png.png"
+    import Szeroki from "$lib/images/szeroki.png"
 </script>
 
 <svelte:head>
