@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
             "Review de code et contribution à l'open source",
         ],
         link: "https://goscord.dev",
-        skills: ["Golang", "WebSocket", "Docker"],
+        skills: ["Golang", "UDP", "WebSocket", "Docker"],
     },
     {
         type: "OPEN SOURCE",

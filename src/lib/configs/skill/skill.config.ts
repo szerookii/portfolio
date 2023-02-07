@@ -20,11 +20,6 @@ export const skills: Skill[] = [
         href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
-        name: "JavaScript",
-        icon: faJs,
-        href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
         name: "TypeScript",
         icon: undefined,
         href: "https://www.typescriptlang.org/",
@@ -85,9 +80,9 @@ export const skills: Skill[] = [
         href: "https://www.npmjs.com/",
     },
     {
-        name: "MySQL",
+        name: "PostgresSQL",
         icon: faDatabase,
-        href: "https://www.mysql.com/",
+        href: "https://www.postgresql.org/",
     },
     {
         name: "MongoDB",
