@@ -3,11 +3,11 @@
     import type {IconDefinition} from "@fortawesome/free-brands-svg-icons";
 
     export let name: string;
-    export let href: string;
+    export let link: string;
     export let icon: IconDefinition | undefined;
 </script>
 
-<a href="{href}">
+<a href="{link}">
     <FontAwesomeIcon class="text-white" size="lg" icon={icon} />
     <span class="text-white text-xl px-2 -mt-1">{name}</span>
 </a>
