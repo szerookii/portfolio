@@ -51,6 +51,11 @@
             href: "https://golang.org/",
         },
         {
+            name: "C++",
+            icon: undefined,
+            href: "https://isocpp.org/",
+        },
+        {
             name: "Rust",
             icon: faRust,
             href: "https://www.rust-lang.org/",
