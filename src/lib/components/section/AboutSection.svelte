@@ -4,10 +4,11 @@
     import {Variables} from "$lib/utils/Variables";
     import {faDiscord, faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
     import Link from "$lib/components/Link.svelte";
-    import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+    import {faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
+    import Tag from "$lib/components/Tag.svelte";
 </script>
 
-<section class="h-full w-full">
+<section>
     <img
             class="max-h-56 w-full object-cover block object-center"
             src={Header}
@@ -22,14 +23,17 @@
         >
     </div>
 
-    <div class="w-full pr-8 shrink-0 grid items-center justify-start max-lg:pl-8 lg:px-44 xl:px-96">
-        <p class="text-white text-4xl pt-8 font-bold">Développeur & Beatmaker</p>
+    <div class="pr-8 shrink-0 text-white grid items-center justify-start max-lg:pl-8 lg:px-44 xl:px-96">
+        <p class="text-white text-4xl pt-8 font-bold">
+            Développeur & Beatmaker
+            <Tag text="Lille" icon={faLocationDot}/>
+        </p>
 
         <p class="text-white text-xl py-8">Je suis szeroki, développeur et beatmaker passionné depuis 2016, je
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <div class="grid grid-cols-4 justify-center max-sm:grid-cols-2 gap-8 md:pt-4">
+        <div class="flex flex-wrap justify-center max-sm:grid-cols-2 gap-8 md:pt-4">
             <Link name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
 
             <Link name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
