@@ -1,8 +1,8 @@
 <script lang="ts">
     import Header from "$lib/images/header.png";
     import szeroki from "$lib/images/szeroki.png";
-    import {Variables} from "$lib/utils/variables";
-    import {faDiscord, faGithub, faSoundcloud, faTwitter} from "@fortawesome/free-brands-svg-icons";
+    import {Variables} from "$lib/utils/Variables";
+    import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons";
     import Link from "$lib/components/Link.svelte";
 </script>
 
