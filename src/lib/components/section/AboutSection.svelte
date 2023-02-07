@@ -10,14 +10,14 @@
     <img
             alt="header"
             class="max-h-56 w-full object-cover block object-center"
-            src="header.png"
+            src="/header.png"
     >
 
     <div class="w-full shrink-0 flex items-center justify-start max-lg:pl-8 lg:pl-44 xl:pl-96">
         <img
                 alt="profile"
                 class="-mt-16 h-32 w-32 rounded-full"
-                src="szeroki.png"
+                src="/szeroki.png"
         >
     </div>
 

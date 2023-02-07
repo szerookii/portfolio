@@ -14,13 +14,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="szeroki">
     <meta property="og:description" content="Développeur C++ & Golang et rétro-ingénieur.">
-    <meta property="og:image" content="szeroki.png">
+    <meta property="og:image" content="/szeroki.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="szeroki">
     <meta property="twitter:description" content="Développeur C++ & Golang et rétro-ingénieur.">
-    <meta property="twitter:image" content="szeroki.png">
+    <meta property="twitter:image" content="/szeroki.png">
 </svelte:head>
 
 <div class="app">
