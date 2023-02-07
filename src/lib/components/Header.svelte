@@ -1,18 +1,23 @@
 <script lang="ts">
     import Header from "$lib/images/header.png";
     import szeroki from "$lib/images/szeroki.png";
+    import {Variables} from "$lib/utils/variables";
+    import {faDiscord, faGithub, faSoundcloud, faTwitter} from "@fortawesome/free-brands-svg-icons";
+    import Link from "$lib/components/Link.svelte";
 </script>
 
 <section class="h-full w-full">
     <img
             class="max-h-56 w-full object-cover block object-center"
             src={Header}
+            alt="header"
     >
 
     <div class="w-full shrink-0 flex items-center justify-start max-lg:pl-8 lg:pl-44 xl:pl-96">
         <img
                 class="-mt-16 h-32 w-32 rounded-full"
                 src={szeroki}
+                alt="profile"
         >
     </div>
 
@@ -23,6 +28,10 @@
             travaille
             principalement avec C++ et Golang. Je suis aussi intéressé par la rétro-ingénierie.</p>
 
-        <!-- TODO : Add links -->
+        <div class="grid grid-cols-4 max-sm:grid-cols-2 gap-4 md:pt-4">
+            <Link name="GitHub" link="https://github.com/{Variables.GITHUB_USERNAME}" icon={faGithub} />
+
+            <Link name="Twitter" link="https://twitter.com/{Variables.TWITTER_USERNAME}" icon={faTwitter} />
+        </div>
     </div>
 </section>

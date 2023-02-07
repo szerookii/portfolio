@@ -1,5 +1,6 @@
 <script>
     import '$lib/app.css';
+
     import Loader from "$lib/components/Loader.svelte";
 </script>
 
