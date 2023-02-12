@@ -6,6 +6,7 @@
 
 <svelte:head>
     <title>szeroki</title>
+
     <meta name="title" content="szeroki">
     <meta name="description" content="Développeur C++ & Golang et rétro-ingénieur.">
     <meta name="theme-color" content="#FFFFFF" />

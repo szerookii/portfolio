@@ -5,10 +5,14 @@
     export let text: string;
     export let href: string | undefined;
     export let icon: IconDefinition;
+    export let textColor: string = "white";
+    export let bgColor: string = "white";
+    export let textSize: string = "xs";
+    export let iconSize: string = "lg";
 </script>
 
-<a class="gap-2 text-white text-xs inline-flex font-bold px-3 border-gray hover:border-white border-2 py-1 rounded-full"
-   href="{href}">
-    <FontAwesomeIcon icon={icon} size="lg"/>
+<a class="gap-1 text-{textSize} text-{textColor} border-{bgColor} border inline-flex font-bold rounded py-0.5 px-2"
+   href={href}>
     {text}
+    <FontAwesomeIcon icon={icon} size={iconSize}/>
 </a>

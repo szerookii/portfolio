@@ -21,6 +21,4 @@
     <Divider/>
 
     <ExperienceSection/>
-
-    <Divider/>
 </section>
