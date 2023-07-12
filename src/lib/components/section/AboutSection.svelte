@@ -33,7 +33,7 @@
 
     <div class="shrink-0 text-white grid items-center justify-start mx-auto w-5/6 lg:w-2/4">
         <div class="flex flex-wrap items-center gap-2.5">
-            <p class="text-white text-3xl py-4 font-bold">Mathis L.</p>
+            <p class="text-white text-3xl py-4 font-bold">szeroki</p>
             <Tag icon={faLocationDot} text="Lille" iconSize="lg" textSize="sm"/>
         </div>
 
