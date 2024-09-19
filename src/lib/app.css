@@ -1,10 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-    padding: 0;
-    margin: 0;
+@font-face {
+  font-family: "Minecraft";
+  src:
+    url("/fonts/Minecraft.woff2") format("woff2"),
+    url("/fonts/Minecraft.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  cursor: url("/cursor/default.png"), auto;
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+label {
+  cursor: url("/cursor/pointer.png"), pointer;
 }

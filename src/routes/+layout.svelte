@@ -1,43 +1,26 @@
-<script>
-    import '$lib/app.css';
+<script lang="ts">
+  import "$lib/app.css";
 
-    import Loader from "$lib/components/Loader.svelte";
+  import { onMount } from "svelte";
+  import { wappalyzer } from "$lib/utils";
+
+  const { children } = $props();
+
+  onMount(() => {
+    wappalyzer({
+      value: true,
+      debug: false,
+    });
+  });
 </script>
 
 <svelte:head>
-    <title>szeroki</title>
-
-    <meta name="title" content="szeroki">
-    <meta name="description" content="Développeur C++ & Golang et rétro-ingénieur.">
-    <meta name="theme-color" content="#FFFFFF" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="szeroki">
-    <meta property="og:description" content="Développeur C++ & Golang et rétro-ingénieur.">
-    <meta property="og:url" content="https://szeroki.fr" />
-    <meta property="og:image" content="https://szeroki.fr/meta-tag-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="szeroki">
-    <meta property="twitter:description" content="Développeur C++ & Golang et rétro-ingénieur.">
-    <meta property="twitter:url" content="https://szeroki.fr" />
-    <meta property="twitter:image" content="https://szeroki.fr/meta-tag-image.png">
+  <meta name="theme-color" content="#e9d5ff" />
+  <link rel="canonical" href="https://szeroki.fr" />
 </svelte:head>
 
-<div class="app">
-    <Loader/>
-
-    <main>
-        <slot/>
-    </main>
-
-    <!-- Footer -->
-</div>
-
-<style>
-    :global(body) {
-        background-color: black;
-    }
-</style>
+<main
+  class="min-h-screen scroll-smooth relative overflow-hidden bg-gradient-to-br from-purple-200 to-white font-minecraft"
+>
+  {@render children()}
+</main>
