@@ -17,6 +17,8 @@
 <svelte:head>
   <meta name="theme-color" content="#e9d5ff" />
   <link rel="canonical" href="https://szeroki.fr" />
+
+  <meta name="darkreader-lock">
 </svelte:head>
 
 <main

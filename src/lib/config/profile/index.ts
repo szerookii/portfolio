@@ -1,3 +1,5 @@
+import { Discord, Email, LinkedIn } from "$lib/components/icons";
+
 interface EducationItem {
   period: string;
   title: string;
@@ -33,17 +35,17 @@ export const profile: Profile = {
     {
       name: "Discord",
       link: "https://discord.com/users/810596177857871913",
-      icon: null,
+      icon: Discord,
     },
     {
       name: "Email",
       link: "mailto:contact@szeroki.fr",
-      icon: null,
+      icon: Email,
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/mathis-lutic-604a3a265",
-      icon: null,
+      icon: LinkedIn,
     },
     {
       name: "GitHub",

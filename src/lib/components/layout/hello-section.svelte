@@ -1,5 +1,7 @@
 <script lang="ts">
   import Portrait from "$lib/components/images/portrait.png?enhanced";
+    import Download from "$lib/components/icons/download.svelte";
+    import Button from "$lib/components/surfaces/button.svelte";
 </script>
 
 <section
@@ -22,7 +24,7 @@
       ></div>
     </div>
 
-    <div class="md:w-1/2 text-center md:text-left">
+    <div class="md:w-1/2 text-center md:text-left flex flex-col max-md:items-center">
       <h1 class="text-4xl md:text-5xl font-light text-purple-600 mb-4">
         Salut,<br />moi c'est Mathis!
       </h1>
@@ -37,9 +39,13 @@
         et/ou des <span class="text-yellow-500">applications</span> pour faire
         des mods ou les améliorer. De plus, je participe à des projets open
         source, comme par exemple
-        <a class="text-yellow-500" href="https://goscord.dev">Goscord</a>, une
+        <a class="text-yellow-500 underline underline-offset-2" href="https://goscord.dev">Goscord</a>, une
         API Discord développée en Golang.
       </p>
+      <Button class="w-fit" href="/CV.pdf"><Download
+        color="white"
+        class="h-7 w-7"
+      />Télécharger mon CV</Button>
     </div>
   </div>
 </section>
