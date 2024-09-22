@@ -12,5 +12,4 @@ export const skills: Skill[] = [
   { name: "TypeScript", href: "https://www.typescriptlang.org", icon: null },
   { name: "Docker", href: "https://www.docker.com", icon: null },
   { name: "PostgreSQL", href: "https://www.postgresql.org", icon: null },
-  { name: "MongoDB", href: "https://www.mongodb.com", icon: null },
 ];
