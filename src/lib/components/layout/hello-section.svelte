@@ -42,7 +42,7 @@
         <a class="text-yellow-500 underline underline-offset-2" href="https://goscord.dev">Goscord</a>, une
         API Discord développée en Golang.
       </p>
-      <Button class="w-fit" href="https://blog.szeroki.fr"><Download
+      <Button class="w-fit" href="https://blog.mth.lc"><Download
         color="white"
         class="h-7 w-7"
       />Mon Blog</Button>
