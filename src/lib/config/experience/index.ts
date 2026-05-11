@@ -14,6 +14,23 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    company: "Fondation CGénial",
+    title: "Développeur Frontend & Consultant Tech",
+    date: {
+      start: Date.parse("2026-04-01"),
+      end: null,
+    },
+    description: [
+      "Accompagnement de la Fondation CGénial dans la modernisation critique de leur écosystème numérique, avec un focus particulier sur la transition vers les technologies de pointe.",
+      "Participation active et conseil stratégique sur le passage vers Svelte 5 (Runes, Snippets). Optimisation de la réactivité et simplification de la base de code pour une meilleure maintenabilité.",
+      "Refonte des composants pour exploiter les nouveaux paradigmes de Svelte, garantissant des performances accrues et une expérience utilisateur fluide.",
+      "Audit de l'existant et définition de la roadmap technique pour assurer la pérennité des outils digitaux de la Fondation.",
+      "Refonte des process de développement et du process de déploiement"
+    ],
+    skills: ["Svelte", "MariaDB", "Docker", "PHP", "Symfony"],
+    href: "https://cgenial-connect.fr/",
+  },
+  {
     company: "Ongamecloud",
     title: "Création d'une plateforme d'hébergement",
     date: {

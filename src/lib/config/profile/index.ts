@@ -25,11 +25,6 @@ export const profile: Profile = {
       title: "Baccalauréat technologique STI2D",
       detail: "Lycée Polyvalent Louis Pasteur",
     },
-    {
-      period: "2023",
-      title: "BUT Informatique",
-      detail: "Université A de Lille",
-    },
   ],
   contacts: [
     {
